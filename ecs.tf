@@ -42,8 +42,8 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
       },
       "portMappings": [
         {
-          "containerPort": 8080,
-          "hostPort": 8080
+          "containerPort": 3000,
+          "hostPort": 3000
         }
       ],
       "cpu": 256,
@@ -91,7 +91,7 @@ resource "aws_ecs_service" "aws-ecs-service" {
   load_balancer {
     target_group_arn = aws_lb_target_group.target_group.arn
     container_name   = "${var.app_name}-${var.app_environment}-container"
-    container_port   = 8080
+    container_port   = 3000
   }
 
   depends_on = [aws_lb_listener.listener]
