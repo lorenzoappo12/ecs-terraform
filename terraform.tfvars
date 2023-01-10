@@ -1,6 +1,6 @@
 aws_region        = "us-east-1"
-aws_access_key    = "AKIA6RIIUQTFEJTY7V53"
-aws_secret_key    = "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"
+aws_access_key    = "AKIA6RIIUQTFDHENFLXT"
+aws_secret_key    = "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"
 aws_key_pair_name = "jenkins-key"
 
 availability_zones = ["us-east-1a", "us-east-1b"]
